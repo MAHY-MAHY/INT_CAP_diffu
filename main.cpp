@@ -48,6 +48,7 @@ int main()
     std::cout<<montre2-montre1<<std::endl;
     test2.solution();
     test2.saveMaillage();
+    std::cout<<"ok"<<std::endl;
   }
    
   return 0;

@@ -14,6 +14,8 @@ private:
     Maillage *m_M;
     Maillage *m_tmp;
     double m_Tfin;
+    double h_x;
+    double Dx;
     int m_nFonc;
     double m_Beta;
     double a;
@@ -40,11 +42,11 @@ private:
     // double get_Dy();
     //
     //double zchap_demi(int i,int j);
-    double phi_demipp(int i,int j);
-    double phi_demipm(int i,int j);
-    double phi_demimm(int i,int j);
-    double phi_demimp(int i,int j);
-    double phi(int i , int j);
+    double phi_demipp(int i,int j,double a, double b);
+    double phi_demipm(int i,int j, double a, double b);
+    double phi_demimm(int i,int j, double a, double b);
+    double phi_demimp(int i,int j, double a, double b);
+    double phi(int i , int j,double grad_x, double grad_y);
     double z_plus(int i, int j,int coor);
     double z_moins(int i, int j,int coor);
     double psix(int i, int j,double u);
